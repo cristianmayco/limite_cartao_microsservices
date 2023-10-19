@@ -16,7 +16,7 @@ public class ClientesResource {
 
     private final ClienteService service;
 
-    @GetMapping
+   @GetMapping("/status")
     public String status() {
         return "ok";
     }
