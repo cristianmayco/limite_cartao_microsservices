@@ -25,4 +25,6 @@ public class CartaoService {
         return repository.findByRendaLessThanEqual(rendaBigDecimal);
     }
 
+    public void getCartoesRendaAte(Long renda) {
+    }
 }
