@@ -33,7 +33,7 @@ public class ClientesResource {
         return ResponseEntity.created(headerLocation).build();
     }
 
-    @GetMapping
+    @GetMapping(params = "cpf")
     public ResponseEntity dadosCliente(@RequestParam String cpf) {
         var cliente = service.getByCpf(cpf);
         if (cliente.isEmpty()) {
